@@ -14,18 +14,18 @@ type ServiceStatus = {
 const presentation = {
   degraded: {
     icon: AlertCircle,
-    card: "border-amber-200 bg-amber-50/80 text-amber-950",
-    iconColor: "text-amber-700",
+    card: "border-amber-200 dark:border-amber-900/60 bg-amber-50/80 dark:bg-amber-950/40 text-amber-950 dark:text-amber-200",
+    iconColor: "text-amber-700 dark:text-amber-400",
   },
   outage: {
     icon: AlertCircle,
-    card: "border-red-200 bg-red-50/80 text-red-950",
-    iconColor: "text-red-700",
+    card: "border-red-200 dark:border-red-900/60 bg-red-50/80 dark:bg-red-950/40 text-red-950 dark:text-red-200",
+    iconColor: "text-red-700 dark:text-red-400",
   },
   maintenance: {
     icon: Wrench,
-    card: "border-blue-200 bg-blue-50/80 text-blue-950",
-    iconColor: "text-blue-700",
+    card: "border-blue-200 dark:border-blue-900/60 bg-blue-50/80 dark:bg-blue-950/40 text-blue-950 dark:text-blue-200",
+    iconColor: "text-blue-700 dark:text-blue-400",
   },
 } as const;
 

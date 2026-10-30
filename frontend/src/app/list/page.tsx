@@ -303,10 +303,10 @@ export default function ListPage() {
 
   if (!session?.user) {
     return (
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-background">
         <div className="max-w-4xl mx-auto px-4 py-24 text-center">
-          <h1 className="text-3xl font-bold text-black mb-4">{t("signInTitle")}</h1>
-          <p className="text-gray-600 mb-8">
+          <h1 className="text-3xl font-bold text-foreground mb-4">{t("signInTitle")}</h1>
+          <p className="text-muted-foreground mb-8">
             {t("signInBody")}
           </p>
           <Link href="/sign-in">
@@ -430,8 +430,8 @@ export default function ListPage() {
       )}
 
       {batchNotice && (
-        <Alert className={cn("mt-6", batchNotice.tone === "success" ? "border-emerald-200 bg-emerald-50/50" : "border-red-200 bg-red-50/50")}>
-          {batchNotice.tone === "success" ? <CheckCircle className="h-4 w-4 text-emerald-600" /> : <AlertCircle className="h-4 w-4 text-red-600" />}
+        <Alert className={cn("mt-6", batchNotice.tone === "success" ? "border-emerald-200 dark:border-emerald-900/60 bg-emerald-50/50 dark:bg-emerald-950/40" : "border-red-200 dark:border-red-900/60 bg-red-50/50 dark:bg-red-950/40")}>
+          {batchNotice.tone === "success" ? <CheckCircle className="h-4 w-4 text-emerald-600 dark:text-emerald-400" /> : <AlertCircle className="h-4 w-4 text-red-600 dark:text-red-400" />}
           <AlertDescription className="text-sm">{batchNotice.message}</AlertDescription>
         </Alert>
       )}

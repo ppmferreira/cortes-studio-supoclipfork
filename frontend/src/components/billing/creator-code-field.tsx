@@ -92,7 +92,7 @@ export function CreatorCodeField({ className }: { className?: string }) {
           {isChecking ? <Loader2 className="size-3.5 animate-spin" /> : t("creatorCode.apply")}
         </Button>
       </div>
-      {error && <p className="text-xs text-red-600">{error}</p>}
+      {error && <p className="text-xs text-red-600 dark:text-red-400">{error}</p>}
     </form>
   );
 }

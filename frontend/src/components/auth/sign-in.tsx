@@ -84,7 +84,7 @@ export function SignIn() {
           </Button>
         </form>
         {message && (
-          <p className={`mt-4 text-sm ${ok ? "text-green-600" : "text-red-600"}`}>
+          <p className={`mt-4 text-sm ${ok ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"}`}>
             {message}
           </p>
         )}

@@ -37,7 +37,7 @@ export function ForgotPassword() {
       <p className="mt-2 text-sm text-muted-foreground">{t("forgot.subtitle")}</p>
       <div className="mt-8">
         {sent ? (
-          <p className="text-sm text-green-600">
+          <p className="text-sm text-green-600 dark:text-green-400">
             {t("forgot.sent", { email })}
           </p>
         ) : (
@@ -56,7 +56,7 @@ export function ForgotPassword() {
             </Button>
           </form>
         )}
-        {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
+        {error && <p className="mt-4 text-sm text-red-600 dark:text-red-400">{error}</p>}
       </div>
     </div>
   );

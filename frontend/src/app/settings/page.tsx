@@ -598,9 +598,9 @@ export default function SettingsPage() {
         />
 
         {error && (
-          <Alert className="border-red-200 bg-red-50">
+          <Alert className="border-red-200 dark:border-red-900/60 bg-red-50 dark:bg-red-950/40">
             <AlertCircle className="h-4 w-4 text-red-500" />
-            <AlertDescription className="text-sm text-red-700">{error}</AlertDescription>
+            <AlertDescription className="text-sm text-red-700 dark:text-red-400">{error}</AlertDescription>
           </Alert>
         )}
       </div>
@@ -609,7 +609,7 @@ export default function SettingsPage() {
         <div className="fixed inset-x-0 bottom-[calc(4rem+env(safe-area-inset-bottom))] z-30 flex justify-center px-4 pb-4 pointer-events-none md:bottom-0 md:pb-6 md:pl-64">
           <div className="pointer-events-auto flex w-full max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-200 items-center justify-between gap-4 rounded-2xl border bg-background/95 px-4 py-3 shadow-lg backdrop-blur max-md:mr-14">
             <p role="status" className="flex items-center gap-2 text-sm text-muted-foreground">
-              {success ? <><Check className="size-4 text-emerald-600" />{t("save.saved")}</>
+              {success ? <><Check className="size-4 text-emerald-600 dark:text-emerald-400" />{t("save.saved")}</>
                 : <><span className="size-2 rounded-full bg-brand" />{t("save.unsaved")}</>}
             </p>
             <Button onClick={handleSavePreferences} disabled={isLoading}>

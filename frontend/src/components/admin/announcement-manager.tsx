@@ -88,7 +88,7 @@ export function AnnouncementManager() {
         <p className="text-sm text-muted-foreground">{t("announcements.intro")}</p>
         <Button disabled={saving || loading} onClick={() => { setEditingId(null); setEditor(emptyEditor(t("announcements.defaultAction"))); setMessage(null); }}>{t("announcements.new")}</Button>
       </div>
-      {error && <div role="alert" className="flex items-center gap-3 text-sm text-red-600">{error}{!editor && <Button variant="outline" size="sm" onClick={() => void load()}>{t("announcements.retry")}</Button>}</div>}
+      {error && <div role="alert" className="flex items-center gap-3 text-sm text-red-600 dark:text-red-400">{error}{!editor && <Button variant="outline" size="sm" onClick={() => void load()}>{t("announcements.retry")}</Button>}</div>}
       {message && <p role="status" className="text-sm text-muted-foreground">{message}</p>}
       {editor && (
         <form className="space-y-4 rounded-2xl border bg-background p-5" onSubmit={event => {

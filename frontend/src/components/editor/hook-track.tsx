@@ -23,7 +23,7 @@ export function HookTrack({ doc, pause, seek, update, onDraft, secondsPerPixel }
       <InlineText value={doc.hookTitle ?? ""} label={t("captions.hookTitle")} maxLength={200}
         buttonLabel={`${t("captions.hookTitle")}: ${doc.hookTitle}`}
         title={`${doc.hookTitle} · ${timecode(range.start)} – ${timecode(range.end)}`}
-        className="absolute inset-0 h-full w-full overflow-hidden rounded-md bg-transparent px-3 text-left text-[11px] leading-7 text-amber-950 hover:bg-amber-200 dark:text-amber-100"
+        className="absolute inset-0 h-full w-full overflow-hidden rounded-md bg-transparent px-3 text-left text-[11px] leading-7 text-amber-950 hover:bg-amber-200 dark:hover:bg-amber-900/60 dark:text-amber-100"
         onBegin={() => { pause(); seek(range.start + Math.min(.3, (range.end - range.start) / 2)); }}
         onDraft={text => onDraft(text === null ? undefined : prepareTextDraft(doc, range.start, "hook", text))}
         onCommit={hookTitle => update(current => ({ ...current, hookTitle }))}>

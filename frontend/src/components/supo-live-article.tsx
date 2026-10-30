@@ -93,7 +93,7 @@ export async function SupoLiveArticle({ post }: { post: BlogPost }) {
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
             {[Github, Server, Captions].map((Icon, index) => (
               <div key={index} className="flex items-center gap-3 rounded-xl border bg-background p-4 text-sm font-medium">
-                <Icon className="h-5 w-5 shrink-0 text-emerald-600" />
+                <Icon className="h-5 w-5 shrink-0 text-emerald-600 dark:text-emerald-400" />
                 {t(`${slug}.verdict.points.${index}`)}
               </div>
             ))}
@@ -146,7 +146,7 @@ export async function SupoLiveArticle({ post }: { post: BlogPost }) {
             <ol className="grid gap-4 sm:grid-cols-2">
               {workflowIcons.map((Icon, index) => (
                 <li key={index} className="rounded-xl border bg-background p-4">
-                  <div className="flex items-center justify-between"><Icon className="h-5 w-5 text-emerald-600" /><span className="font-mono text-xs text-muted-foreground">0{index + 1}</span></div>
+                  <div className="flex items-center justify-between"><Icon className="h-5 w-5 text-emerald-600 dark:text-emerald-400" /><span className="font-mono text-xs text-muted-foreground">0{index + 1}</span></div>
                   <h3 className="mt-4">{t(`${slug}.workflow.steps.${index}.title`)}</h3>
                   <p className="mt-1 text-sm leading-6">{t(`${slug}.workflow.steps.${index}.detail`)}</p>
                 </li>
@@ -211,7 +211,7 @@ export async function SupoLiveArticle({ post }: { post: BlogPost }) {
             <h3>{t(`${slug}.start.cardTitle`)}</h3>
             <ul className="my-5 space-y-2 text-sm">
               {([0, 1, 2] as const).map((index) => (
-                <li key={index} className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" />{t(`${slug}.start.points.${index}`)}</li>
+                <li key={index} className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />{t(`${slug}.start.points.${index}`)}</li>
               ))}
             </ul>
             <div className="flex flex-wrap gap-3">

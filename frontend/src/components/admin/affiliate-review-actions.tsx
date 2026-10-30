@@ -65,7 +65,7 @@ export function AffiliateReviewActions({ affiliateId, status, appStoreCodeAdded 
         {confirming === "revoke" && appStoreCodeAdded && (
           <span className="text-xs text-muted-foreground">{t("creators.deactivateStore")}</span>
         )}
-        {error && <span className="text-xs text-red-600">{error}</span>}
+        {error && <span className="text-xs text-red-600 dark:text-red-400">{error}</span>}
       </div>
     );
   }
@@ -95,7 +95,7 @@ export function AffiliateReviewActions({ affiliateId, status, appStoreCodeAdded 
           {t("creators.revoke")}
         </Button>
       )}
-      {error && <span className="text-xs text-red-600">{error}</span>}
+      {error && <span className="text-xs text-red-600 dark:text-red-400">{error}</span>}
     </div>
   );
 }

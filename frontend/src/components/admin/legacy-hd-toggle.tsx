@@ -43,7 +43,7 @@ export function LegacyHdToggle({ userId, legacyHd }: LegacyHdToggleProps) {
       <Button variant="outline" size="sm" onClick={handleToggle} disabled={isLoading}>
         {isLoading ? t("savingDots") : legacyHd ? t("users.removeHd") : t("users.keepHd")}
       </Button>
-      {error && <span className="text-xs text-red-600">{error}</span>}
+      {error && <span className="text-xs text-red-600 dark:text-red-400">{error}</span>}
     </div>
   );
 }

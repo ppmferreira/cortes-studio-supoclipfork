@@ -216,7 +216,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <ul className="mt-5 space-y-3 text-sm">
                 {audienceIcons.map((Icon, index) => (
                   <li key={index} className="flex gap-3">
-                    <Icon className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
+                    <Icon className="mt-0.5 h-4 w-4 shrink-0 text-green-600 dark:text-green-400" />
                     <span>{t(`${key}.audience.${index}`)}</span>
                   </li>
                 ))}
@@ -406,7 +406,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </div>
               </div>
               <div className="rounded-lg border bg-muted/35 p-5">
-                <ShieldCheck className="h-5 w-5 text-green-600" />
+                <ShieldCheck className="h-5 w-5 text-green-600 dark:text-green-400" />
                 <p className="mt-3 text-sm font-semibold">{t(`${key}.aside.title`)}</p>
                 <p className="mt-2 text-sm leading-6 text-muted-foreground">{t(`${key}.aside.body`)}</p>
               </div>

@@ -91,7 +91,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={intlLocale(locale)}>
+    <html lang={intlLocale(locale)} className="dark" style={{ colorScheme: "dark" }}>
       <head>
         {isDataFastEnabled ? (
           <>

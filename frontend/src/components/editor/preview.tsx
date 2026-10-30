@@ -430,7 +430,7 @@ export function Preview({
           <p
             className={cn(
               "pointer-events-none absolute inset-x-0 top-3.5 px-40 text-center text-[11px] max-md:hidden",
-              fontError ? "text-amber-600" : "text-muted-foreground",
+              fontError ? "text-amber-600 dark:text-amber-400" : "text-muted-foreground",
             )}
           >
             {hint}

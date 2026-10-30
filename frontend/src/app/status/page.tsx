@@ -10,10 +10,10 @@ import { getPrismaClient } from "@/server/prisma";
 export const dynamic = "force-dynamic";
 
 const presentations: Record<string, { badge: string; border: string }> = {
-  operational: { badge: "bg-emerald-100 text-emerald-900", border: "border-emerald-200" },
-  degraded: { badge: "bg-amber-100 text-amber-900", border: "border-amber-200" },
-  outage: { badge: "bg-red-100 text-red-900", border: "border-red-200" },
-  maintenance: { badge: "bg-blue-100 text-blue-900", border: "border-blue-200" },
+  operational: { badge: "bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-200", border: "border-emerald-200 dark:border-emerald-900/60" },
+  degraded: { badge: "bg-amber-100 dark:bg-amber-900/40 text-amber-900 dark:text-amber-200", border: "border-amber-200 dark:border-amber-900/60" },
+  outage: { badge: "bg-red-100 dark:bg-red-900/40 text-red-900 dark:text-red-200", border: "border-red-200 dark:border-red-900/60" },
+  maintenance: { badge: "bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-200", border: "border-blue-200 dark:border-blue-900/60" },
 };
 
 const STATUSES = ["operational", "degraded", "outage", "maintenance"] as const;

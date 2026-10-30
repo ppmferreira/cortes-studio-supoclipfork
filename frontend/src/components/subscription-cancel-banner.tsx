@@ -85,9 +85,9 @@ export function SubscriptionCancelBanner({
 
   return (
     <>
-      <Alert className={`border-amber-200 bg-amber-50 ${className ?? ""}`}>
-        <AlertCircle className="h-4 w-4 text-amber-600" />
-        <AlertDescription className="text-sm text-amber-900">
+      <Alert className={`border-amber-200 dark:border-amber-900/60 bg-amber-50 dark:bg-amber-950/40 ${className ?? ""}`}>
+        <AlertCircle className="h-4 w-4 text-amber-600 dark:text-amber-400" />
+        <AlertDescription className="text-sm text-amber-900 dark:text-amber-200">
           <span>
             {t.rich("cancel.scheduled", {
               date: cancelDate,

@@ -61,7 +61,7 @@ export function ResetPassword() {
       <p className="mt-2 text-sm text-muted-foreground">{t("reset.subtitle")}</p>
       <div className="mt-8">
         {done ? (
-          <p className="text-sm text-green-600">{t("reset.success")}</p>
+          <p className="text-sm text-green-600 dark:text-green-400">{t("reset.success")}</p>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input
@@ -89,7 +89,7 @@ export function ResetPassword() {
             </Button>
           </form>
         )}
-        {message && <p className="mt-4 text-sm text-red-600">{message}</p>}
+        {message && <p className="mt-4 text-sm text-red-600 dark:text-red-400">{message}</p>}
       </div>
     </div>
   );

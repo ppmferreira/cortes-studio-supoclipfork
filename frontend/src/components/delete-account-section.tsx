@@ -81,7 +81,7 @@ export function DeleteAccountSection({ email, hasAppStoreSubscription = false }:
   return (
     <section className="rounded-2xl border border-red-200 bg-background dark:border-red-900/60">
       <div className="flex items-start gap-3 border-b border-red-200 px-5 py-4 dark:border-red-900/60">
-        <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-lg bg-red-50 text-red-600 dark:bg-red-950/50">
+        <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-lg bg-red-50 text-red-600 dark:text-red-400 dark:bg-red-950/50">
           <TriangleAlert className="size-4" />
         </span>
         <div>
@@ -107,7 +107,7 @@ export function DeleteAccountSection({ email, hasAppStoreSubscription = false }:
 
               {hasAppStoreSubscription && (
                 <Alert className="border-amber-200 bg-amber-50 dark:border-amber-900/60 dark:bg-amber-950/40">
-                  <AlertCircle className="h-4 w-4 text-amber-600" />
+                  <AlertCircle className="h-4 w-4 text-amber-600 dark:text-amber-400" />
                   <AlertDescription className="text-sm text-amber-800 dark:text-amber-200">
                     {t("deleteAccount.appStore")}
                   </AlertDescription>
@@ -143,9 +143,9 @@ export function DeleteAccountSection({ email, hasAppStoreSubscription = false }:
               </div>
 
               {error && (
-                <Alert className="border-red-200 bg-red-50">
+                <Alert className="border-red-200 dark:border-red-900/60 bg-red-50 dark:bg-red-950/40">
                   <AlertCircle className="h-4 w-4 text-red-500" />
-                  <AlertDescription className="text-sm text-red-700">{error}</AlertDescription>
+                  <AlertDescription className="text-sm text-red-700 dark:text-red-400">{error}</AlertDescription>
                 </Alert>
               )}
 

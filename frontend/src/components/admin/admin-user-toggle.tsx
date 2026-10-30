@@ -57,7 +57,7 @@ export function AdminUserToggle({ userId, isAdmin, isCurrentUser }: AdminUserTog
       >
         {isLoading ? t("savingDots") : isAdmin ? t("users.removeAdmin") : t("users.makeAdmin")}
       </Button>
-      {error && <span className="text-xs text-red-600">{error}</span>}
+      {error && <span className="text-xs text-red-600 dark:text-red-400">{error}</span>}
     </div>
   );
 }

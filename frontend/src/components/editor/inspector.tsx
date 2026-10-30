@@ -516,7 +516,7 @@ export function Inspector({
                           className={cn(
                             "size-7",
                             word.highlight
-                              ? "bg-yellow-100 text-yellow-800 hover:bg-yellow-200"
+                              ? "bg-yellow-100 dark:bg-yellow-900/40 text-yellow-800 dark:text-yellow-200 hover:bg-yellow-200 dark:hover:bg-yellow-900/60"
                               : "text-muted-foreground",
                           )}
                           onClick={() =>
